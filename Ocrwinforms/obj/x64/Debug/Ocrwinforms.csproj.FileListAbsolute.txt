@@ -1,0 +1,16 @@
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\bin\x64\Debug\x64\liblept172.dll
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\bin\x64\Debug\x64\libtesseract304.dll
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\bin\x64\Debug\x86\liblept172.dll
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\bin\x64\Debug\x86\libtesseract304.dll
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\bin\x64\Debug\Ocrwinforms.exe
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\bin\x64\Debug\Ocrwinforms.pdb
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\obj\x64\Debug\Ocrwinforms.csprojAssemblyReference.cache
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\obj\x64\Debug\Ocrwinforms.Form1.resources
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\obj\x64\Debug\Ocrwinforms.Properties.Resources.resources
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\obj\x64\Debug\Ocrwinforms.csproj.GenerateResource.cache
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\obj\x64\Debug\Ocrwinforms.csproj.CoreCompileInputs.cache
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\obj\x64\Debug\Ocrwinforms.csproj.CopyComplete
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\obj\x64\Debug\Ocrwinforms.exe
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\obj\x64\Debug\Ocrwinforms.pdb
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\bin\x64\Debug\Tesseract.dll
+D:\TumProjeler\Ocrwinforms\Ocrwinforms\bin\x64\Debug\Tesseract.xml

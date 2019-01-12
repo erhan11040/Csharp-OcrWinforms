@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{924369FF-E438-4BE4-A508-16AAC2685F48}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ocrwinforms</RootNamespace>
+    <AssemblyName>Ocrwinforms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tesseract, Version=3.0.2.0, Culture=neutral, PublicKeyToken=ebeb3d86bef60cbe, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tesseract.3.0.2.0\lib\net40\Tesseract.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="tessdata\eng.cube.bigrams" />
+    <None Include="tessdata\eng.cube.fold" />
+    <None Include="tessdata\eng.cube.lm" />
+    <None Include="tessdata\eng.cube.nn" />
+    <None Include="tessdata\eng.cube.params" />
+    <None Include="tessdata\eng.cube.size" />
+    <None Include="tessdata\eng.cube.word-freq" />
+    <None Include="tessdata\eng.tesseract_cube.nn" />
+    <None Include="tessdata\eng.traineddata" />
+    <None Include="tessdata\tur.traineddata" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License-LGPL.txt" />
+    <Content Include="test\1523121597.png" />
+    <Content Include="test\1523121598.png" />
+    <Content Include="test\1523122112.png" />
+    <Content Include="test\1523126114.png" />
+    <Content Include="test\1523126270.png" />
+    <Content Include="test\1523126990.png" />
+    <Content Include="test\1523126993.png" />
+    <Content Include="test\1523267888.png" />
+    <Content Include="test\1523268342.png" />
+    <Content Include="test\1523268525.png" />
+    <Content Include="test\1523268646.png" />
+    <Content Include="test\1523268653.png" />
+    <Content Include="test\1523271824.png" />
+    <Content Include="test\1523271832.png" />
+    <Content Include="test\1523273278.png" />
+    <Content Include="test\1523273283.png" />
+    <Content Include="test\1523274226.png" />
+    <Content Include="test\1523275814.png" />
+    <Content Include="test\1523278255.png" />
+    <Content Include="test\1523278256.png" />
+    <Content Include="test\1523278260.png" />
+    <Content Include="test\1523281565.png" />
+    <Content Include="test\1523282612.png" />
+    <Content Include="test\1523282615.png" />
+    <Content Include="test\1523560611.png" />
+    <Content Include="test\1523561035.png" />
+    <Content Include="test\1523561039.png" />
+    <Content Include="test\1524047621.png" />
+    <Content Include="test\1524047623.png" />
+    <Content Include="test\1524047624.png" />
+    <Content Include="test\1524050204.png" />
+    <Content Include="test\1524068934.png" />
+    <Content Include="test\1524069152.png" />
+    <Content Include="test\1524069178.png" />
+    <Content Include="test\1524069179.png" />
+    <Content Include="test\1524069280.png" />
+    <Content Include="test\1524069289.png" />
+    <Content Include="test\1524069390.png" />
+    <Content Include="test\1524069454.png" />
+    <Content Include="test\1524069456.png" />
+    <Content Include="test\1524071437.png" />
+    <Content Include="test\1524071447.png" />
+    <Content Include="test\1524071450.png" />
+    <Content Include="test\1524071461.png" />
+    <Content Include="test\1524071464.png" />
+    <Content Include="test\1524071466.png" />
+    <Content Include="test\1524071488.png" />
+    <Content Include="test\1524071490.png" />
+    <Content Include="test\1524071493.png" />
+    <Content Include="test\1524072324.png" />
+    <Content Include="test\1524072589.png" />
+    <Content Include="test\1524072814.png" />
+    <Content Include="test\1524072915.png" />
+    <Content Include="test\1524072916.png" />
+    <Content Include="test\1524072919.png" />
+    <Content Include="test\1524072922.png" />
+    <Content Include="test\1524072931.png" />
+    <Content Include="test\1524073468.png" />
+    <Content Include="test\1524073471.png" />
+    <Content Include="test\1524073572.png" />
+    <Content Include="test\1524073576.png" />
+    <Content Include="test\1524073666.png" />
+    <Content Include="test\1524073669.png" />
+    <Content Include="test\1524073770.png" />
+    <Content Include="test\1524073772.png" />
+    <Content Include="test\1524073773.png" />
+    <Content Include="test\1524073774.png" />
+    <Content Include="test\1524073875.png" />
+    <Content Include="test\1524073899.png" />
+    <Content Include="test\1524073914.png" />
+    <Content Include="test\1524073922.png" />
+    <Content Include="test\1524073929.png" />
+    <Content Include="test\1524073930.png" />
+    <Content Include="test\1524073931.png" />
+    <Content Include="test\1524073934.png" />
+    <Content Include="test\1524073935.png" />
+    <Content Include="test\1524073950.png" />
+    <Content Include="test\1524073951.png" />
+    <Content Include="test\1524073960.png" />
+    <Content Include="test\1524073963.png" />
+    <Content Include="test\1524074064.png" />
+    <Content Include="test\1524074165.png" />
+    <Content Include="test\1524074178.png" />
+    <Content Include="test\1524074279.png" />
+    <Content Include="test\1524074281.png" />
+    <Content Include="test\1524074282.png" />
+    <Content Include="test\1524074383.png" />
+    <Content Include="test\1524074386.png" />
+    <Content Include="test\1524074487.png" />
+    <Content Include="test\1524074588.png" />
+    <Content Include="test\1524074589.png" />
+    <Content Include="test\1524074590.png" />
+    <Content Include="test\1524074604.png" />
+    <Content Include="test\1524074705.png" />
+    <Content Include="test\1524074806.png" />
+    <Content Include="test\1524074811.png" />
+    <Content Include="test\1524074912.png" />
+    <Content Include="test\1524075013.png" />
+    <Content Include="test\1524075021.png" />
+    <Content Include="test\1524075122.png" />
+    <Content Include="test\1524075124.png" />
+    <Content Include="test\1524075225.png" />
+    <Content Include="test\1524075226.png" />
+    <Content Include="test\1524075228.png" />
+    <Content Include="test\1524075232.png" />
+    <Content Include="test\1524075243.png" />
+    <Content Include="test\1524075252.png" />
+    <Content Include="test\1524075353.png" />
+    <Content Include="test\1524075355.png" />
+    <Content Include="test\1524075357.png" />
+    <Content Include="test\1524075458.png" />
+    <Content Include="test\1524075559.png" />
+    <Content Include="test\1524075660.png" />
+    <Content Include="test\1524075761.png" />
+    <Content Include="test\1524075762.png" />
+    <Content Include="test\1524075763.png" />
+    <Content Include="test\1524075776.png" />
+    <Content Include="test\1524075777.png" />
+    <Content Include="test\1524075780.png" />
+    <Content Include="test\1524075881.png" />
+    <Content Include="test\1524075982.png" />
+    <Content Include="test\1524075983.png" />
+    <Content Include="test\1524075985.png" />
+    <Content Include="test\1524075993.png" />
+    <Content Include="test\1524076038.png" />
+    <Content Include="test\1524076039.png" />
+    <Content Include="test\1524076140.png" />
+    <Content Include="test\1524076241.png" />
+    <Content Include="test\1524076251.png" />
+    <Content Include="test\1524076352.png" />
+    <Content Include="test\1524076356.png" />
+    <Content Include="test\1524076457.png" />
+    <Content Include="test\1524145658.png" />
+    <Content Include="test\1524145660.png" />
+    <Content Include="test\1524145667.png" />
+    <Content Include="test\1524151837.png" />
+    <Content Include="test\1524151839.png" />
+    <Content Include="test\1524152576.png" />
+    <Content Include="test\1524152578.png" />
+    <Content Include="test\1524252062.png" />
+    <Content Include="test\1524252071.png" />
+    <Content Include="test\1524252072.png" />
+    <Content Include="test\1524252074.png" />
+    <Content Include="test\1524252171.png" />
+    <Content Include="test\1524252200.png" />
+    <Content Include="test\1524252209.png" />
+    <Content Include="test\1524252815.png" />
+    <Content Include="test\1524252916.png" />
+    <Content Include="test\1524253307.png" />
+    <Content Include="test\1524253308.png" />
+    <Content Include="test\1524253312.png" />
+    <Content Include="test\1524253707.png" />
+    <Content Include="test\1524253808.png" />
+    <Content Include="test\1524253819.png" />
+    <Content Include="test\1524253824.png" />
+    <Content Include="test\1524253825.png" />
+    <Content Include="test\1524253926.png" />
+    <Content Include="test\1524253927.png" />
+    <Content Include="test\1524254323.png" />
+    <Content Include="test\1524311860.png" />
+    <Content Include="test\1524313241.png" />
+    <Content Include="test\1524313242.png" />
+    <Content Include="test\1524313254.png" />
+    <Content Include="test\1524313256.png" />
+    <Content Include="test\1524321127.png" />
+    <Content Include="test\1524321129.png" />
+    <Content Include="test\1524321230.png" />
+    <Content Include="test\1524322214.png" />
+    <Content Include="test\1524322233.png" />
+    <Content Include="test\1524322234.png" />
+    <Content Include="test\1524322245.png" />
+    <Content Include="test\1524322248.png" />
+    <Content Include="test\1524323408.png" />
+    <Content Include="test\1524323411.png" />
+    <Content Include="test\1524323412.png" />
+    <Content Include="test\1524323413.png" />
+    <Content Include="test\1524323427.png" />
+    <Content Include="test\1524323436.png" />
+    <Content Include="test\1524323440.png" />
+    <Content Include="test\1524323441.png" />
+    <Content Include="test\1524323445.png" />
+    <Content Include="test\1524323448.png" />
+    <Content Include="test\1524323450.png" />
+    <Content Include="test\1524323451.png" />
+    <Content Include="test\1524323456.png" />
+    <Content Include="test\1524323457.png" />
+    <Content Include="test\1524336148.png" />
+    <Content Include="test\1524336160.png" />
+    <Content Include="test\1524336194.png" />
+    <Content Include="test\1524336204.png" />
+    <Content Include="test\1524336213.png" />
+    <Content Include="test\1524336218.png" />
+    <Content Include="test\1524336219.png" />
+    <Content Include="test\1524336308.png" />
+    <Content Include="test\1524336316.png" />
+    <Content Include="test\1524336317.png" />
+    <Content Include="test\1524336418.png" />
+    <Content Include="test\1524336426.png" />
+    <Content Include="test\1524336527.png" />
+    <Content Include="test\1524336528.png" />
+    <Content Include="test\1524336545.png" />
+    <Content Include="test\1524336557.png" />
+    <Content Include="test\1524336658.png" />
+    <Content Include="test\1524336659.png" />
+    <Content Include="test\1524336661.png" />
+    <Content Include="test\1524336667.png" />
+    <Content Include="test\1524336672.png" />
+    <Content Include="test\1524336676.png" />
+    <Content Include="test\1524336678.png" />
+    <Content Include="test\1524336704.png" />
+    <Content Include="test\1524336705.png" />
+    <Content Include="test\1524336706.png" />
+    <Content Include="test\1524336708.png" />
+    <Content Include="test\1524336711.png" />
+    <Content Include="test\1524336712.png" />
+    <Content Include="test\1524336713.png" />
+    <Content Include="test\1524336717.png" />
+    <Content Include="test\1524336718.png" />
+    <Content Include="test\1524336720.png" />
+    <Content Include="test\1524336722.png" />
+    <Content Include="test\1524336723.png" />
+    <Content Include="test\1524336753.png" />
+    <Content Include="test\1524336755.png" />
+    <Content Include="test\1524336756.png" />
+    <Content Include="test\1524336758.png" />
+    <Content Include="test\1524336759.png" />
+    <Content Include="test\1524481542.png" />
+    <Content Include="test\1524481636.png" />
+    <Content Include="test\1524481638.png" />
+    <Content Include="test\1524486299.png" />
+    <Content Include="test\1524486300.png" />
+    <Content Include="test\1524486313.png" />
+    <Content Include="test\1524486317.png" />
+    <Content Include="test\1524486321.png" />
+    <Content Include="test\1524486322.png" />
+    <Content Include="test\1524486323.png" />
+    <Content Include="test\1524486333.png" />
+    <Content Include="test\1524486334.png" />
+    <Content Include="test\1524486339.png" />
+    <Content Include="test\1524486344.png" />
+    <Content Include="test\1524486346.png" />
+    <Content Include="test\1524486354.png" />
+    <Content Include="test\1524488853.png" />
+    <Content Include="test\1524488867.png" />
+    <Content Include="test\1524488871.png" />
+    <Content Include="test\1524488885.png" />
+    <Content Include="test\1524489399.png" />
+    <Content Include="test\1524489410.png" />
+    <Content Include="test\1524489411.png" />
+    <Content Include="test\1524489412.png" />
+    <Content Include="test\1524489418.png" />
+    <Content Include="test\1524489424.png" />
+    <Content Include="test\1524489426.png" />
+    <Content Include="test\1524489452.png" />
+    <Content Include="test\1524489456.png" />
+    <Content Include="test\1524489457.png" />
+    <Content Include="test\1524489460.png" />
+    <Content Include="test\1524489461.png" />
+    <Content Include="test\1524489464.png" />
+    <Content Include="test\1524489476.png" />
+    <Content Include="test\1524489479.png" />
+    <Content Include="test\1524489480.png" />
+    <Content Include="test\1524489485.png" />
+    <Content Include="test\1524489486.png" />
+    <Content Include="test\1524489587.png" />
+    <Content Include="test\1524489588.png" />
+    <Content Include="test\1524489591.png" />
+    <Content Include="test\1524489592.png" />
+    <Content Include="test\1524489603.png" />
+    <Content Include="test\1524489604.png" />
+    <Content Include="test\1524489605.png" />
+    <Content Include="test\1524489606.png" />
+    <Content Include="test\1524569389.png" />
+    <Content Include="test\1524569397.png" />
+    <Content Include="test\1524569418.png" />
+    <Content Include="test\1524570127.png" />
+    <Content Include="test\1524570141.png" />
+    <Content Include="test\1524570142.png" />
+    <Content Include="test\1524570143.png" />
+    <Content Include="test\1524570144.png" />
+    <Content Include="test\1524570145.png" />
+    <Content Include="test\1524570146.png" />
+    <Content Include="test\1524570147.png" />
+    <Content Include="test\1524570149.png" />
+    <Content Include="test\1524570155.png" />
+    <Content Include="test\1524570156.png" />
+    <Content Include="test\1524570157.png" />
+    <Content Include="test\1524570162.png" />
+    <Content Include="test\1524570165.png" />
+    <Content Include="test\1524570171.png" />
+    <Content Include="test\1524570176.png" />
+    <Content Include="test\1524570178.png" />
+    <Content Include="test\1524570179.png" />
+    <Content Include="test\1524570185.png" />
+    <Content Include="test\1524570186.png" />
+    <Content Include="test\1524570188.png" />
+    <Content Include="test\1524570190.png" />
+    <Content Include="test\1524570196.png" />
+    <Content Include="test\1524570207.png" />
+    <Content Include="test\1524570215.png" />
+    <Content Include="test\1524570216.png" />
+    <Content Include="test\1524570217.png" />
+    <Content Include="test\1524570220.png" />
+    <Content Include="test\1524570221.png" />
+    <Content Include="test\1524570222.png" />
+    <Content Include="test\1524570223.png" />
+    <Content Include="test\1524936180.png" />
+    <Content Include="test\1524936181.png" />
+    <Content Include="test\1525092616.png" />
+    <Content Include="test\1531496268.png" />
+    <Content Include="test\1531496270.png" />
+    <Content Include="test\1531496271.png" />
+    <Content Include="test\1531496372.png" />
+    <Content Include="test\1531496473.png" />
+    <Content Include="test\1531496574.png" />
+    <Content Include="test\1531496675.png" />
+    <Content Include="x64\liblept172.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\libtesseract304.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\liblept172.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libtesseract304.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
